@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/charlie_tracker_widget_container"
+    style="@style/Widget.CharlieTracker.AppWidget.Container"
+    android:layout_width="@dimen/widget_size"
+    android:layout_height="@dimen/widget_size"
+    android:background="@color/transparent"
+    android:layout_centerVertical="true"
+    android:theme="@style/Theme.CharlieTracker.AppWidgetContainer">
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:background="@drawable/rounded_enabled"
+        android:padding="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/container_size"
+        android:layout_height="@dimen/container_size">
+        <TextView
+            android:id="@+id/appwidget_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/appwidget_text"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+</RelativeLayout>
